@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar" id="nav">
+        <div class="navbar__top">
+          <div class="container">
+            <div class="navbar__wrapper">
+              <div class="navbar__logo"><a href="/"><img src="img/logo-m.png" alt="StarGym"></a></div>
+              <div class="navbar__phone"><a href="tel:+380636987411"> <i class="icon-phone"></i>+380 63 698 74 11</a></div>
+              <div class="navbar__menu--secondary"><span>
+                   Полезное<i class="icon-arrow-right icon-arrow-right--blue"></i></span>
+                                <ul class="menu-secondary">
+                                  <li><a>Тренировки</a></li>
+                                  <li><a>Статьи</a></li>
+                                  <li><a>Контакты</a></li>
+                                  <li><a>Все звёзды</a></li>
+                                  <li><a>Тренера</a></li>
+                                  <li><a>Фитнес-клубы</a></li>
+                                  <li><a>Секции</a></li>
+                                  <li><a>Школы танцев</a></li>
+                                  <li><a>Спорт магазины</a></li>
+                                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__bottom">
+          <div class="container">
+            <div class="navbar__wrapper">
+              <div class="navbar__catalog">
+                <div class="navbar__catalog_link"><span></span>
+                  <p>Каталог товаров</p>
+                </div>
+                <ul class="menu-primary">
+                  <li class="menu-primary__item"><a href="#">Силовое оборудование Xline</a></li>
+                  <li class="menu-primary__item"><a href="#">Велотренажеры</a></li>
+                  <li class="menu-primary__item"><a href="#">Эллиптические тренажеры</a></li>
+                  <li class="menu-primary__item"><a href="#">Орбитреки</a></li>
+                  <li class="menu-primary__item"><a href="#">Степперы</a></li>
+                  <li class="menu-primary__item"><a href="#">Виброплатформы</a></li>
+                  <li class="menu-primary__item"><a href="#">Беговые дорожки</a></li>
+                  <li class="menu-primary__item"><a href="#">Грузоблочные тренажеры</a></li>
+                  <li class="menu-primary__item"><a href="#">Свободные веса</a></li>
+                  <li class="menu-primary__item"><a href="#">Тренажер для пресса</a></li>
+                  <li class="menu-primary__item"><a href="#">Фитнес оборудование</a></li>
+                  <li class="menu-primary__item"><a href="#">Скамьи и стойки</a></li>
+                  <li class="menu-primary__item"><a href="#">Грифы, диски, гантели</a></li>
+                  <li class="menu-primary__item"><a href="#">Много функциональный тренажер TRX Professional</a></li>
+                  <li class="menu-primary__item has-dropdown"><a href="#">Computers & Accessories</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-menu__item dropdown-menu__title">Computers & Accessories</li>
+                      <li class="dropdown-menu__item"><a href="#">All Computers & Accessories</a></li>
+                      <li class="dropdown-menu__item"><a href="#">Laptops, Desktops & Monitors</a></li>
+                      <li class="dropdown-menu__item"><a href="#">Printers & Ink</a></li>
+                      <li class="dropdown-menu__item"><a href="#">Networking & Internet Devices</a></li>
+                      <li class="dropdown-menu__item"><a href="#">Computer Accessories</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar__search"><a class="navbar__search_link" href="#"><i class="icon-search"></i></a>
+                <form class="search" action="" method="get">
+                  <input type="text" name="" placeholder="Поиск...">
+                  <button type="submit"><i class="icon-search"></i></button>
+                </form>
+              </div>
+              <div class="navbar__basket">
+                <div class="navbar__basket_link"><span class="navbar__basket_link--count"><i class="icon-basket"></i>2</span><span class="navbar__basket_link--price">2800 грн.</span></div>
+                <div class="basket-mini">
+                  <div class="basket-mini__content"> 
+                    <ul class="basket-mini__list">
+                      <li class="basket-mini__item"><a class="basket-mini__item--remove" href="#"><i class="icon-remove"></i></a><a class="basket-mini__item--link" href="#"><img src="img/8921.png"><span>Stern Compacy 20" Electro</span></a><span class="basket-mini__item--quantity">
+                           2 × 6999 грн</span></li>
+                      <li class="basket-mini__item"><a class="basket-mini__item--remove" href="#"><i class="icon-remove"></i></a><a class="basket-mini__item--link" href="#"><img src="img/8921.png"><span>Stern Compacy 20" Electro</span></a><span class="basket-mini__item--quantity">
+                           2 × 6999 грн</span></li>
+                      <li class="basket-mini__item"><a class="basket-mini__item--remove" href="#"><i class="icon-remove"></i></a><a class="basket-mini__item--link" href="#"><img src="img/8921.png"><span>Stern Compacy 20" Electro</span></a><span class="basket-mini__item--quantity">
+                           2 × 6999 грн</span></li>
+                      <li class="basket-mini__item"><a class="basket-mini__item--remove" href="#"><i class="icon-remove"></i></a><a class="basket-mini__item--link" href="#"><img src="img/8921.png"><span>Stern Compacy 20" Electro</span></a><span class="basket-mini__item--quantity">
+                           2 × 6999 грн</span></li>
+                    </ul>
+                    <p class="basket-mini__total"><strong>Сумма:</strong><span>13998 грн</span></p>
+                    <p class="basket-mini__buttons"><a class="btn" href="#">Быстрый заказ</a><a class="btn" href="#">Оформить</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>   
+      <div class="breadcrumb">
+        <div class="container">
+          <ul> 
+            <li> <a href="#">Главная</a></li>
+            <li> <a href="#">Ледовые коньки</a></li>
+            <li>Коньки хоккейные ССМ SK 9040 SE</li>
+          </ul>
+        </div>
+      </div>
+      <div class="catalog"> 
+        <div class="container"> 
+          <div class="catalog-row"> 
+            <div class="catalog-filter"> 
+              <div class="filter">
+                <div class="filter__title"> 
+                  <h4>Фильтр</h4><a class="filter-close" href="#"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="filter-box">
+                  <div class="filter-box__title">Цена, грн</div>
+                  <div class="filter-box__slider"> 
+                    <div class="filter-box__slider-num"> 
+                      <input type="text" readonly id="priceOne">
+                      <input type="text" readonly id="priceTwo">
+                    </div>
+                    <div class="filter-box__slider-radio">
+                      <div id="price"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-box"> 
+                  <div class="filter-box__title">Бренд</div>
+                  <div class="filter-box__input"> 
+                    <label>
+                      <input type="checkbox" name="brand1"><span class="mark"> </span><span class="text">Bauer (5)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand1"><span class="mark"> </span><span class="text">CCM (7)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand1"><span class="mark"> </span><span class="text">Graf (8)</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-box"> 
+                  <div class="filter-box__title">Пол</div>
+                  <div class="filter-box__input"> 
+                    <label>
+                      <input type="checkbox" name="gender"><span class="mark"> </span><span class="text">Мужской (5)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="gender"><span class="mark"> </span><span class="text">Женский (7)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="gender"><span class="mark"> </span><span class="text">Унисекс (8)</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="filter-box"> 
+                  <div class="filter-box__title">Размер</div>
+                  <div class="filter-box__input"> 
+                    <label>
+                      <input type="checkbox" name="size"><span class="mark"> </span><span class="text">24-28 (5)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="size"><span class="mark"> </span><span class="text">28 (7)</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="size"><span class="mark"> </span><span class="text">29 (8)</span>
+                    </label><a class="filter-box__more-link" href="#"><span>Показать еще</span><i class="fas fa-angle-down"></i></a>
+                  </div>
+                </div>
+                <button class="filter__reset" type="reset"> <span>Сбросить все фильтры</span><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+            <div class="catalog-content"> 
+              <div class="catalog-content__sort"> 
+                <div class="justselect-wrapper">
+                  <select class="justselect">
+                    <option selected="selected" value="По популярности">По популярности</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+                <div class="catalog-content__sort-link"><a href="#">Рекомендуем </a><a href="#">Лучшая цена</a></div><a class="filter-open" href="#"> <i class="fas fa-filter"></i></a>
+              </div>
+              <div class="catalog-content__items"> 
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item smooth">
+                  <div class="card-item__info"><span class="discount">-30%</span>
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                    <div class="rating"> <span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star checked"></span><span class="fas fa-star"></span></div>
+                  </div>
+                  <div class="card-item__price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="card-item__basket basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination"><a href="#"><i class="fas fa-chevron-left"> </i></a><a href="#">1</a><a href="#">2</a><a class="active" href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#"><i class="fas fa-chevron-right"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="special-offers">
+        <div class="container">
+          <div class="special-offers__wrapper">
+            <div class="special-offers__heading">
+              <h2 class="special-offers__title">Специальные предложение</h2><span class="line"></span>
+            </div>
+            <div class="special-offers__list">
+              <div class="special-offers__discount js-discount-items"><a class="special-offers__discount_item smooth" href="#"><img src="img/special-offers/ssd.jpg" alt=""></a><a class="special-offers__discount_item smooth" href="#"><img src="img/special-offers/ssd.jpg" alt=""></a><a class="special-offers__discount_item smooth" href="#"><img src="img/special-offers/single1.jpg" alt=""></a></div>
+              <div class="special-offers__items js-special-offers">
+                <div class="special-offers__item smooth">
+                  <div class="info">
+                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title" href="#">Кроссовки мужские Nike Presto Fly World </a>
+                  </div>
+                  <div class="price"><span class="old">3499 грн</span><span class="current">2499 грн</span></div>
+                  <div class="basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="special-offers__item smooth">
+                  <div class="info">
+                    <div class="img"><img src="img/special-offers/02.png" alt=""></div><a class="title" href="#">Джемпер женский Nike Sportswear</a>
+                  </div>
+                  <div class="price"><span class="old">2899 грн</span><span class="current">1999 грн</span></div>
+                  <div class="basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="special-offers__item smooth">
+                  <div class="info">
+                    <div class="img"><img src="img/special-offers/03.png" alt=""></div><a class="title" href="#">Коврик для фитнеса Kettler</a>
+                  </div>
+                  <div class="price"><span class="old">2100 грн</span><span class="current">1499 грн</span></div>
+                  <div class="basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="special-offers__item smooth">
+                  <div class="info">
+                    <div class="img"><img src="img/special-offers/04.png" alt=""></div><a class="title" href="#">Сумка Head Djokovic 9</a>
+                  </div>
+                  <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span></div>
+                  <div class="basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="special-offers__item smooth">
+                  <div class="info">
+                    <div class="img"><img src="img/special-offers/04.png" alt=""></div><a class="title" href="#">Сумка Head Djokovic 9</a>
+                  </div>
+                  <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span></div>
+                  <div class="basket-overlay">
+                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                      <input type="text" name="1" value="1"><span class="plus">+</span>
+                    </div>
+                    <div class="basket-overlay__add-to-cart">
+                      <button type="submit">В корзину</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copy">
+          <p>© 2011. StarGym - качественное оборудование для фитнес-клубов и дома</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

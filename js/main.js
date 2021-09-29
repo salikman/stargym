@@ -1,6 +1,34 @@
 "use strict";
 
 (function($) {
+    $('.filter-open').click((e) => {
+		e.preventDefault();
+
+		$('.catalog').toggleClass('open-filter');
+
+		$('.filter-close').click((e) => {
+			e.preventDefault();
+
+			$('.catalog').removeClass('open-filter');
+		})
+	})
+
+    ///////////////////////////
+    // slider radio catalog filter
+    $( "#price" ).slider({
+        range: true,
+        min: 0,
+        max: 150000,
+        values: [ 300, 150000 ],
+        slide: function( event, ui ) {
+            $( "#priceOne" ).val( ui.values[ 0 ] );
+            $( "#priceTwo" ).val( ui.values[ 1 ] );
+        }
+    });
+    $( "#priceOne" ).val( $( "#price" ).slider( "values", 0 ) );
+    $( "#priceTwo" ).val( $( "#price" ).slider( "values", 1 ) );
+
+
     $('.navbar__catalog_link').on('click scroll', (e) => {
         e.preventDefault();
         $('#nav').toggleClass('menu-open');
@@ -62,4 +90,40 @@
             }
         ]
     });
+
+
+    $('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+        $(this)
+            .addClass('active')
+            .siblings()
+            .removeClass('active')
+            .closest('div.tabs')
+            .find('div.tabs__content')
+            .removeClass('active')
+            .eq($(this).index())
+            .addClass('active');
+    });
 })(jQuery);
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 0,
+    thumbs: {
+        swiper: swiper,
+    },
+});
